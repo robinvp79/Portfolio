@@ -1,0 +1,264 @@
+* {
+    box-sizing: border-box;
+}
+.row::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+[class*="col-"] {
+    float: left;
+    padding: 50px;
+}
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+
+.header{
+	background-color: #ffffff;
+	border-color: #cccccc;
+	width: 100%;
+}
+
+aside{
+	float: left;
+	background: #4aaaa5;
+	padding: 30px;
+	margin-left: 50px;
+	font-size: 28px;
+	color: white;
+	font-family: Georgia;
+}
+
+#middle, #left {
+	border-right: 1px solid #cccccc;
+}
+
+#right, #middle, #left {
+	float: right;
+	padding: 0px 15px 0px 15px;
+	font-size: 16px;
+	color: #cccccc;
+	font-family: Times;
+	margin: 40px 0px 20px 0px;
+}
+
+#right{
+	margin-right: 50px;
+}
+
+#bio-image {
+	float: left;
+	width: 200px;
+	margin: 30px 15px 0px 0px;
+}
+
+.row{
+	clear: both;
+	overflow: auto;
+	/*width: 960px;*/
+	width: 100%;
+	background-color: #eee;
+	border-top: 2px solid #cccccc;
+	border-bottom: 8px solid #4aaaa5;
+}
+
+.main-bio{
+	width: 60%;
+	float: left;
+	background-color: #ffffff;
+	margin: 25px 10px 25px 50px;
+	padding: 50px;
+}
+
+.contact-bio{
+	width: 20%;
+	float: left;
+	text-align: center;
+	background-color: #ffffff;
+	margin: 25px 0px 0px 20px;
+	padding: 20px 0px 20px 0px;
+}
+
+p {
+	text-align: justify;
+	line-height: 1.7;
+	font-size: 19px;
+	padding-top: 25px;
+	color: #777777;
+}
+
+h3{
+	margin: 0px 20px 0px 20px;
+	font-size: 18px;
+}
+
+h2{
+	font-size: 25px;
+}
+
+h2, h3 {
+	font-family: Georgia serif;
+	font-weight: bold;
+	color: #4aaaa5;
+	padding-bottom: 20px;
+	border-bottom: 2px solid #cccccc;
+}
+
+.logo {
+	width: 40px;
+	float: left;
+	margin: 0px 10px 15px 0px;
+	position: relative;
+	left: 20px;
+	top: 15px;
+}
+
+#contact_form{
+	position: relative;
+	top: 30px;
+	color: #777777;
+}
+
+.footer{
+	background-color: #666666;
+	color: #cccccc;
+	text-align: center;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	width: 100%;
+	font-size: 12px;
+}
+
+input[type=text] {
+	width: 100%;
+	padding: 10px;
+	margin: 10px 0px 10px 0px;
+	box-sizing: border-box;
+	color: #cccccc;
+}
+
+textarea {
+	width: 100%;
+	height: 180px;
+	padding: 10px 20px;
+	margin: 10px 0px 10px 0px;
+	box-sizing: border-box;
+	border-color: #cccccc;
+}
+
+input[type=submit] {
+    background-color: #4aaaa5;
+    color: white;
+    padding: 10px 30px;
+    margin-bottom: 25px;
+    cursor: pointer;
+    border: none;
+    font-size: 16px;
+}
+
+.picture:hover {
+	outline: 5px solid gray;
+    outline-offset: 1px;
+}
+
+.division{
+	position: relative;
+	bottom: 55px;
+	text-align: center;
+	background-color: #4aaaa5;
+	padding: 13px;
+	color: white;
+	margin-bottom: -45px;
+}
+
+.picture{
+    	float: left;
+    	width: 50%;
+    	padding: 20px;
+    }
+
+#fail, #think, #healthy, #pasion, #lonely, #lost{
+    	width: 100%;
+    }
+
+.desc{
+	clear: both;
+}
+
+a:hover {
+    background-color: #4aaaa5;
+    color: white;
+}
+
+.logo:hover{
+	outline: 5px solid gray;
+    outline-offset: 1px;
+}
+
+input[type=submit]:hover {
+	outline: 5px solid gray;
+    outline-offset: 1px;
+}
+
+@media screen and (max-width: 980px) {
+	body , .footer {
+		background-color: red;
+	}
+} 
+
+@media screen and (max-width: 768px) {
+	body , .footer {
+		background-color: blue;
+	}
+	.main-bio , .contact-bio{
+		margin-left: 0px;
+		width: 100%;
+	}
+	.contact-bio {
+    	margin-bottom: 25px;
+    }
+	[class*='col-']{
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 640px) {
+	aside{
+		margin-left: 0px;
+		width: 100%;
+	}
+	#right, #middle, #left{
+		margin-right: 0px;
+		width: 33%;
+	}
+	.header{
+		position: static;
+	}
+	body , .footer {
+		background-color: yellow;
+	}
+	.main-bio , .contact-bio{
+		margin-left: 0px;
+		width: 100%;
+	}
+	[class*="col-"] {
+        width: 100%;
+    }
+    .contact-bio {
+    	margin-bottom: 25px;
+    }    
+    .picture{
+    	width: 100%;
+    }
+}
